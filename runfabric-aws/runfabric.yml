@@ -1,0 +1,16 @@
+service: hello-api
+runtime: nodejs
+entry: src/index.ts
+
+providers:
+  - aws-lambda
+
+triggers:
+  - type: http
+    method: GET
+    path: /hello
+
+extensions:
+  aws-lambda:
+    region: ap-south-1
+    roleArn: arn:aws:iam::910560001176:role/runfabric-lambda-exec
