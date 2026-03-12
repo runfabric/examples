@@ -1,0 +1,18 @@
+service: hello-worker
+runtime: nodejs
+entry: src/index.ts
+
+providers:
+  - aws-lambda
+
+state:
+  backend: local
+  local:
+    dir: ./.runfabric/state
+
+triggers:
+  - type: eventbridge
+    pattern:
+      source:
+        - app.source
+    bus: default

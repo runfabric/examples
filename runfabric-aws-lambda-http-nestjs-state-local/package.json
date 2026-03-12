@@ -1,0 +1,28 @@
+{
+  "name": "runfabric-aws-lambda-http-nestjs-state-local",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "doctor": "runfabric doctor",
+    "plan": "runfabric plan",
+    "build": "tsc -p tsconfig.json",
+    "deploy": "runfabric deploy",
+    "call:local": "runfabric call-local -c runfabric.yml --serve --watch",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "@nestjs/common": "^11.0.0",
+    "@nestjs/core": "^11.0.0",
+    "@nestjs/platform-express": "^11.0.0",
+    "@runfabric/core": "^0.1.0",
+    "@runfabric/provider-aws-lambda": "^0.1.0",
+    "@runfabric/runtime-node": "^0.1.0",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.2",
+    "@types/node": "^24.5.2"
+  }
+}

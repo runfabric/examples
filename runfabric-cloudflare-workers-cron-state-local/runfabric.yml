@@ -1,0 +1,15 @@
+service: hello-cron
+runtime: nodejs
+entry: src/index.ts
+
+providers:
+  - cloudflare-workers
+
+state:
+  backend: local
+  local:
+    dir: ./.runfabric/state
+
+triggers:
+  - type: cron
+    schedule: "*/5 * * * *"

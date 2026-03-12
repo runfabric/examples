@@ -1,0 +1,15 @@
+service: hello-queue
+runtime: nodejs
+entry: src/index.ts
+
+providers:
+  - alibaba-fc
+
+state:
+  backend: local
+  local:
+    dir: ./.runfabric/state
+
+triggers:
+  - type: queue
+    queue: jobs

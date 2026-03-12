@@ -5,11 +5,13 @@ entry: src/index.ts
 providers:
   - aws-lambda
 
+state:
+  backend: azblob
+  azblob:
+    container: ${env:RUNFABRIC_STATE_AZBLOB_CONTAINER}
+    prefix: runfabric/state
+
 triggers:
   - type: http
     method: GET
     path: /hello
-
-extensions:
-  aws-lambda:
-    region: ap-south-1

@@ -1,0 +1,16 @@
+service: hello-worker
+runtime: nodejs
+entry: src/index.ts
+
+providers:
+  - azure-functions
+
+state:
+  backend: local
+  local:
+    dir: ./.runfabric/state
+
+triggers:
+  - type: http
+    method: POST
+    path: /work

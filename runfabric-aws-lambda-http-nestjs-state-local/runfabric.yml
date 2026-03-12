@@ -1,15 +1,16 @@
-service: hello-api
+service: hello-nest-api
 runtime: nodejs
 entry: src/index.ts
 
 providers:
   - aws-lambda
 
+state:
+  backend: local
+  local:
+    dir: ./.runfabric/state
+
 triggers:
   - type: http
     method: GET
     path: /hello
-
-extensions:
-  aws-lambda:
-    region: ap-south-1

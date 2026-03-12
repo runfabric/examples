@@ -1,0 +1,19 @@
+service: hello-api
+runtime: nodejs
+entry: src/index.ts
+
+providers:
+  - aws-lambda
+
+state:
+  backend: s3
+  s3:
+    bucket: ${env:RUNFABRIC_STATE_S3_BUCKET}
+    region: ${env:AWS_REGION,us-east-1}
+    keyPrefix: runfabric/state
+    useLockfile: true
+
+triggers:
+  - type: http
+    method: GET
+    path: /hello

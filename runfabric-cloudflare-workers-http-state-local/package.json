@@ -1,0 +1,22 @@
+{
+  "name": "hello-api",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "doctor": "runfabric doctor",
+    "plan": "runfabric plan",
+    "build": "tsc -p tsconfig.json",
+    "deploy": "runfabric deploy",
+    "call:local": "runfabric call-local -c runfabric.yml --serve --watch",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "@runfabric/core": "^0.1.0",
+    "@runfabric/provider-cloudflare-workers": "^0.1.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.2",
+    "@types/node": "^24.5.2"
+  }
+}

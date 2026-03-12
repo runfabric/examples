@@ -5,11 +5,14 @@ entry: src/index.ts
 providers:
   - aws-lambda
 
+state:
+  backend: postgres
+  postgres:
+    connectionStringEnv: RUNFABRIC_STATE_POSTGRES_URL
+    schema: public
+    table: runfabric_state
+
 triggers:
   - type: http
     method: GET
     path: /hello
-
-extensions:
-  aws-lambda:
-    region: ap-south-1
