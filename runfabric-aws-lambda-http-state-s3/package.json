@@ -1,5 +1,5 @@
 {
-  "name": "hello-api",
+  "name": "runfabric-aws-lambda-http-state-s3-1",
   "private": true,
   "version": "0.1.0",
   "type": "module",
@@ -12,11 +12,11 @@
     "typecheck": "tsc --noEmit -p tsconfig.json"
   },
   "dependencies": {
-    "@runfabric/core": "^0.1.0",
-    "@runfabric/provider-aws-lambda": "^0.1.0"
+    "@runfabric/core": "^0.1.1",
+    "@runfabric/provider-aws-lambda": "^0.1.1"
   },
   "devDependencies": {
-    "typescript": "^5.9.2",
-    "@types/node": "^24.5.2"
+    "@types/node": "^24.12.0",
+    "typescript": "^5.9.3"
   }
 }

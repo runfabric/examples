@@ -1,4 +1,4 @@
-service: hello-api
+service: runfabric-aws-lambda-http-state-s3
 runtime: nodejs
 entry: src/index.ts
 
@@ -10,10 +10,15 @@ state:
   s3:
     bucket: ${env:RUNFABRIC_STATE_S3_BUCKET}
     region: ${env:AWS_REGION,us-east-1}
-    keyPrefix: runfabric/state
+    keyPrefix: runfabric/runfabric-aws-lambda-http-state-s3-753b5130/state
     useLockfile: true
 
 triggers:
   - type: http
     method: GET
     path: /hello
+
+extensions:
+  aws-lambda:
+    region: ap-south-1
+    roleArn: ${env:ROLE_ARN}
