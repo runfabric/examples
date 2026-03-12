@@ -12,8 +12,8 @@
     "typecheck": "tsc --noEmit -p tsconfig.json"
   },
   "dependencies": {
-    "@runfabric/provider-aws-lambda": "0.1.0-beta.3",
-    "@runfabric/core": "0.1.0-beta.3"
+    "@runfabric/core": "0.1.1",
+    "@runfabric/provider-aws-lambda": "0.1.1"
   },
   "devDependencies": {
     "typescript": "^5.9.2",
