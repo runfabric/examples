@@ -1,0 +1,12 @@
+# RunFabric
+.runfabric/
+.env
+.env.*
+!.env.example
+*.log
+
+# Go
+bin/
+*.exe
+vendor/
+*.test

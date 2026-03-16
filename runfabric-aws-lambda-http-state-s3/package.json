@@ -1,22 +1,13 @@
 {
-  "name": "runfabric-aws-lambda-http-state-s3-1",
-  "private": true,
+  "name": "runfabric-aws-lambda-http-state-s3",
   "version": "0.1.0",
-  "type": "module",
+  "private": true,
   "scripts": {
-    "doctor": "runfabric doctor",
-    "plan": "runfabric plan",
-    "build": "tsc -p tsconfig.json",
-    "deploy": "runfabric deploy",
-    "call:local": "runfabric call-local -c runfabric.yml --serve --watch",
-    "typecheck": "tsc --noEmit -p tsconfig.json"
-  },
-  "dependencies": {
-    "@runfabric/core": "^0.1.1",
-    "@runfabric/provider-aws-lambda": "^0.1.1"
+    "start": "node dist/handler.js",
+    "build": "tsc"
   },
   "devDependencies": {
-    "@types/node": "^24.12.0",
-    "typescript": "^5.9.3"
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0"
   }
 }

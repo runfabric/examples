@@ -1,0 +1,8 @@
+{
+  "name": "runfabric-aws-lambda-http-state-local-js",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "node src/handler.js"
+  }
+}

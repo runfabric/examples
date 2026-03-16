@@ -1,25 +1,13 @@
 {
   "name": "runfabric-aws-lambda-http-expressjs-state-local",
-  "private": true,
   "version": "0.1.0",
-  "type": "module",
+  "private": true,
   "scripts": {
-    "doctor": "runfabric doctor",
-    "plan": "runfabric plan",
-    "build": "tsc -p tsconfig.json",
-    "deploy": "runfabric deploy",
-    "call:local": "runfabric call-local -c runfabric.yml --serve --watch",
-    "typecheck": "tsc --noEmit -p tsconfig.json"
-  },
-  "dependencies": {
-    "@runfabric/core": "^0.1.0",
-    "@runfabric/provider-aws-lambda": "^0.1.0",
-    "@runfabric/runtime-node": "^0.1.0",
-    "express": "^4.21.2"
+    "start": "node dist/handler.js",
+    "build": "tsc"
   },
   "devDependencies": {
-    "@types/express": "^4.17.21",
-    "@types/node": "^24.5.2",
-    "typescript": "^5.9.2"
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0"
   }
 }

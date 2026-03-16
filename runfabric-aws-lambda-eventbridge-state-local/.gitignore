@@ -1,4 +1,15 @@
-node_modules
-dist
-.runfabric
+# RunFabric
+.runfabric/
 .env
+.env.*
+!.env.example
+*.log
+
+# Node
+node_modules/
+npm-debug.log*
+.npm
+dist/
+build/
+coverage/
+.nyc_output/

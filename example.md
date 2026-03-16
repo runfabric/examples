@@ -101,3 +101,32 @@
 
 ### runfabric-ibm-openwhisk-http-state-local
 `runfabric init --dir runfabric-ibm-openwhisk-http-state-local --template api --provider ibm-openwhisk --state-backend local --lang ts --skip-install --no-interactive`
+
+# Multi-language (JavaScript, Python, Go)
+
+### runfabric-aws-lambda-http-state-local-js
+`runfabric init --dir runfabric-aws-lambda-http-state-local-js --template api --provider aws-lambda --state-backend local --lang js --skip-install --no-interactive`
+
+### runfabric-aws-lambda-http-state-local-python
+`runfabric init --dir runfabric-aws-lambda-http-state-local-python --template api --provider aws-lambda --state-backend local --lang python --skip-install --no-interactive`
+
+### runfabric-aws-lambda-http-state-local-go
+`runfabric init --dir runfabric-aws-lambda-http-state-local-go --template api --provider aws-lambda --state-backend local --lang go --skip-install --no-interactive`
+
+### runfabric-cloudflare-workers-http-state-local-js
+`runfabric init --dir runfabric-cloudflare-workers-http-state-local-js --template api --provider cloudflare-workers --state-backend local --lang js --skip-install --no-interactive`
+
+### runfabric-cloudflare-workers-http-state-local-python
+`runfabric init --dir runfabric-cloudflare-workers-http-state-local-python --template api --provider cloudflare-workers --state-backend local --lang python --skip-install --no-interactive`
+
+### runfabric-vercel-http-state-local-js
+`runfabric init --dir runfabric-vercel-http-state-local-js --template api --provider vercel --state-backend local --lang js --skip-install --no-interactive`
+
+### runfabric-gcp-functions-http-state-local-python
+`runfabric init --dir runfabric-gcp-functions-http-state-local-python --template api --provider gcp-functions --state-backend local --lang python --skip-install --no-interactive`
+
+### runfabric-gcp-functions-http-state-local-go
+`runfabric init --dir runfabric-gcp-functions-http-state-local-go --template api --provider gcp-functions --state-backend local --lang go --skip-install --no-interactive`
+
+### runfabric-azure-functions-http-state-local-python
+`runfabric init --dir runfabric-azure-functions-http-state-local-python --template api --provider azure-functions --state-backend local --lang python --skip-install --no-interactive`
